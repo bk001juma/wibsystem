@@ -14,43 +14,31 @@ export const Headerdata: HeaderItem[] = [
   { label: "Docs", href: "/documentation" },
 ];
 
-const basePath = "";
 
-export const Companiesdata: { imgSrc: string }[] = [
-  {
-    imgSrc: `${basePath}/images/companies/birdseye.svg`,
-  },
-  {
-    imgSrc: `${basePath}/images/companies/break.svg`,
-  },
-  {
-    imgSrc: `${basePath}/images/companies/keddar.svg`,
-  },
-  {
-    imgSrc: `${basePath}/images/companies/shield.svg`,
-  },
-  {
-    imgSrc: `${basePath}/images/companies/tandov.svg`,
-  },
-  {
-    imgSrc: `${basePath}/images/companies/tree.svg`,
-  },
+
+export const Companiesdata = [
+  { imgSrc: "/images/companies/birdseye.svg" },
+  { imgSrc: "/images/companies/break.svg" },
+  { imgSrc: "/images/companies/keddar.svg" },
+  { imgSrc: "/images/companies/shield.svg" },
+  { imgSrc: "/images/companies/tandov.svg" },
+  { imgSrc: "/images/companies/tree.svg" },
 ];
 
 export const workdata: WorkType[] = [
   {
-    imgSrc: `${basePath}/images/work/icon-one.svg`,
+    imgSrc: `/images/work/icon-one.svg`,
     heading: "Fashion Branding",
     subheading: "Design, register, and print our logo on clothing products.",
   },
   {
-    imgSrc: `${basePath}/images/work/icon-two.svg`,
+    imgSrc: `/images/work/icon-two.svg`,
     heading: "Advertisement",
     subheading:
       "Advertise our music on different digital platforms through ads",
   },
   {
-    imgSrc: `${basePath}/images/work/icon-three.svg`,
+    imgSrc: `/images/work/icon-three.svg`,
     heading: "Live Performances",
     subheading: "Artist contributions and performance shows.",
   },
@@ -58,17 +46,17 @@ export const workdata: WorkType[] = [
 
 export const Featuresdata: FeatureType[] = [
   {
-    imgSrc: `${basePath}/images/features/featureOne.svg`,
+    imgSrc: `/images/features/featureOne.svg`,
     heading: "Fashion Branding",
     subheading: "Design and print our logo on clothing products.",
   },
   {
-    imgSrc: `${basePath}/images/features/featureOne.svg`,
+    imgSrc: `/images/features/featureOne.svg`,
     heading: "Limited Product Launch",
     subheading: "Start with t-shirts and pullovers, 20 pieces this year.",
   },
   {
-    imgSrc: `${basePath}/images/features/featureOne.svg`,
+    imgSrc: `/images/features/featureOne.svg`,
     heading: "Artist Promotion",
     subheading: "3 hit songs, 2 videos, social media growth.",
   },
@@ -99,19 +87,19 @@ export const Faqdata: FaqType[] = [
 
 export const Sociallinkdata: SocialType[] = [
   {
-    imgsrc: `${basePath}/images/footer/insta.svg`,
+    imgsrc: `/images/footer/insta.svg`,
     href: "https://instagram.com/",
   },
   {
-    imgsrc: `${basePath}/images/footer/dribble.svg`,
+    imgsrc: `/images/footer/dribble.svg`,
     href: "https://dribble.com/",
   },
   {
-    imgsrc: `${basePath}/images/footer/twitter.svg`,
+    imgsrc: `/images/footer/twitter.svg`,
     href: "https://twitter.com/",
   },
   {
-    imgsrc: `${basePath}/images/footer/youtube.svg`,
+    imgsrc: `/images/footer/youtube.svg`,
     href: "https://youtube.com/",
   },
 ];
