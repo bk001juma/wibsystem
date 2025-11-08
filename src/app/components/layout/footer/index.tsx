@@ -11,50 +11,39 @@ const Footer = () => {
       <div className="bg-linear-to-r from-primary to-secondary hidden lg:block absolute w-full h-full top-0 -left-1/2 blur-390"></div>
       <div className="container relative z-10 pb-16">
         <div className="grid grid-cols-1 gap-y-10 md:gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
-          {/* Logo & Description */}
-          <div className="lg:col-span-6 sm:col-span-2">
-            <img
-              className="block h-12 w-20px mb-4"
-              src={getImagePath("/images/logo/logo.svg")}
-              alt="WIB-LTD-Logo"
-            />
-            <p className="text-white/60 text-sm font-normal max-w-96 leading-7 mb-7">
-              WIB LTD is a leading company in fashion and entertainment,
-              combining exclusive clothing lines with talented artist promotions
-              and live performances.
-            </p>
-            <div className="flex gap-4">
-              {Sociallinkdata.map((items, i) => (
-                <Link href={items.href} key={i} target="_blank">
-                  <img
-                    src={items.imgsrc}
-                    alt={items.imgsrc}
-                    className="hover:opacity-70"
-                  />
-                </Link>
-              ))}
+
+          {/* CEO Section */}
+          <div className="lg:col-span-6 sm:col-span-2 flex flex-col items-center text-center">
+            <p className="text-white text-xl font-semibold mb-4">CEO</p>
+            <div className="w-48 h-48 rounded-xl overflow-hidden mb-2 bg-white/10 flex items-center justify-center">
+              <Image
+                src={getImagePath("/images/team/ceo.jpeg")}
+                alt="CEO Lameck Seth Lameck"
+                width={192}  // slightly larger to ensure coverage
+                height={192}
+                className="object-cover w-full h-full"
+              />
             </div>
+            <p className="text-white/80 text-lg font-medium">Lameck Seth Lameck</p>
           </div>
 
-          {/* Useful Links */}
-          <div className="group relative lg:col-span-2">
-            <p className="text-white text-xl font-medium mb-9">Useful Links</p>
-            <ul>
-              {Footerlinkdata.map((product, i) => (
-                <li key={i} className="mb-5">
-                  <Link
-                    href={product.href}
-                    className="text-white/60 text-sm font-normal mb-6 space-links hover:text-primary"
-                  >
-                    {product.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          {/* Manager Section */}
+          <div className="lg:col-span-2 sm:col-span-2 flex flex-col items-center text-center">
+            <p className="text-white text-xl font-semibold mb-4">Manager</p>
+            <div className="w-48 h-48 rounded-xl overflow-hidden mb-2 bg-white/10 flex items-center justify-center">
+              <Image
+                src={getImagePath("/images/team/manager.jpeg")}
+                alt="Manager Baraka Mashimbe"
+                width={192}
+                height={192}
+                className="object-cover w-full h-full"
+              />
+            </div>
+            <p className="text-white/80 text-lg font-medium">Baraka Mashimbe</p>
           </div>
 
-          {/* Contact Info */}
-          <div className="lg:col-span-4">
+          {/* Contact Info (unchanged) */}
+          <div className="lg:col-span-4 sm:col-span-2">
             <p className="text-white text-xl font-medium mb-9">Contact Us</p>
             <Link
               href="tel:+255680522062"
@@ -66,7 +55,7 @@ const Footer = () => {
                 width={20}
                 height={20}
               />
-             +255 680 522 062
+              +255 680 522 062
             </Link>
             <Link
               href="mailto:wibinfo01@gmail.com"
@@ -90,6 +79,7 @@ const Footer = () => {
               Dar es Salaam, Tanzania
             </div>
           </div>
+
         </div>
       </div>
 

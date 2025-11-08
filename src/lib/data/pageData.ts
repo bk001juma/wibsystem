@@ -7,14 +7,12 @@ import { WorkType } from "@/app/types/work";
 
 export const Headerdata: HeaderItem[] = [
   { label: "Home", href: "/" },
-  { label: "Exchange", href: "/#exchange-section" },
-  { label: "Features", href: "/#features-section" },
+
+  { label: "Work Plan", href: "/#features-section" },
   { label: "FAQ", href: "/#faq-section" },
   { label: "Contact Us", href: "/#contact" },
-  { label: "Docs", href: "/documentation" },
+  
 ];
-
-
 
 export const Companiesdata = [
   { imgSrc: "/images/companies/birdseye.svg" },
@@ -106,7 +104,6 @@ export const Sociallinkdata: SocialType[] = [
 
 export const Footerlinkdata: FooterType[] = [
   { label: "Home", href: "/" },
-  { label: "Exchange", href: "/#exchange-section" },
   { label: "Features", href: "/#features-section" },
   { label: "FAQ", href: "/#faq-section" },
   { label: "Contact Us", href: "/#contact" },

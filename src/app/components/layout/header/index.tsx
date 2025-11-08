@@ -79,7 +79,7 @@ const Header: React.FC = () => {
               <HeaderLink key={index} item={item} />
             ))}
           </nav>
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <Link
               href="#"
               className="hidden lg:block bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white duration-300 px-6 py-3 rounded-lg"
@@ -147,7 +147,7 @@ const Header: React.FC = () => {
               <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
               <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
             </button>
-          </div>
+          </div> */}
         </div>
         {navbarOpen && (
           <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-40" />
