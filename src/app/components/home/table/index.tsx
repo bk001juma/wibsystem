@@ -14,7 +14,7 @@ const Table = () => {
 
         <div className="grid md:grid-cols-2 gap-10 mt-14">
           {/* Vision Card */}
-          <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl p-10 text-white shadow-lg">
+          <div className="bg-linear-to-r from-primary to-secondary rounded-2xl p-10 text-white shadow-lg">
             <h3 className="text-2xl font-semibold mb-4">Our Vision</h3>
             <p className="text-white/90">
               To be the leading company in fashion and entertainment business.
@@ -22,7 +22,7 @@ const Table = () => {
           </div>
 
           {/* Mission Card */}
-          <div className="bg-gradient-to-r from-secondary to-primary rounded-2xl p-10 text-white shadow-lg">
+          <div className="bg-linear-to-r from-secondary to-primary rounded-2xl p-10 text-white shadow-lg">
             <h3 className="text-2xl font-semibold mb-4">Our Mission</h3>
             <p className="text-white/90">
               To use our publicity to sell our products, leveraging our own artists and brand ambassadors to connect with our audience.
