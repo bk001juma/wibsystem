@@ -14,7 +14,7 @@ export const Headerdata: HeaderItem[] = [
   { label: "Docs", href: "/documentation" },
 ];
 
-const basePath = process.env.NODE_ENV === "production" ? "/crypto-nextjs" : "";
+const basePath = "";
 
 export const Companiesdata: { imgSrc: string }[] = [
   {
@@ -52,7 +52,7 @@ export const workdata: WorkType[] = [
   {
     imgSrc: `${basePath}/images/work/icon-three.svg`,
     heading: "Live Performances",
-    subheading: "Artist contributions and performance shows."
+    subheading: "Artist contributions and performance shows.",
   },
 ];
 
@@ -77,22 +77,25 @@ export const Featuresdata: FeatureType[] = [
 export const Faqdata: FaqType[] = [
   {
     heading: "What is WIB LTD's main business?",
-    subheading: "WIB LTD operates in fashion and entertainment, launching clothing products and promoting our artists."
+    subheading:
+      "WIB LTD operates in fashion and entertainment, launching clothing products and promoting our artists.",
   },
   {
     heading: "How does WIB LTD promote its artists?",
-    subheading: "Through song releases, music videos, live performances, and social media campaigns."
+    subheading:
+      "Through song releases, music videos, live performances, and social media campaigns.",
   },
   {
     heading: "What clothing products are available?",
-    subheading: "We start with limited edition t-shirts and pullovers, aiming to create exclusive collections."
+    subheading:
+      "We start with limited edition t-shirts and pullovers, aiming to create exclusive collections.",
   },
   {
     heading: "How can I get involved?",
-    subheading: "You can follow our social media, attend shows, or contact our management for collaborations."
-  }
+    subheading:
+      "You can follow our social media, attend shows, or contact our management for collaborations.",
+  },
 ];
-
 
 export const Sociallinkdata: SocialType[] = [
   {
