@@ -66,7 +66,7 @@ const Banner = () => {
         <div className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50">
           <div className="bg-gradient-to-br from-primary to-secondary rounded-lg sm:m-0 m-4">
             <div className="overlay flex items-center justify-between border-b border-solid border-border p-5 z-50 backdrop-blur-sm">
-              <h3 className="text-white">Our Process</h3>
+              <h3 className="text-white">Our Artist</h3>
               <button onClick={closeModal} className="inline-block dark:invert">
                 <Icon
                   icon="tabler:circle-x"
