@@ -38,6 +38,7 @@ const ContactForm = () => {
               method="POST"
               className="flex flex-wrap w-full m-auto justify-between"
             >
+              {/* Visible inputs */}
               <div className="sm:flex gap-6 w-full">
                 <div className="mx-0 my-2.5 flex-1">
                   <label
@@ -49,7 +50,7 @@ const ContactForm = () => {
                   <input
                     id="fname"
                     type="text"
-                   name="firstname"
+                    name="firstname"
                     value={formData.firstname}
                     onChange={handleChange}
                     placeholder="John"
@@ -77,6 +78,7 @@ const ContactForm = () => {
                 </div>
               </div>
 
+              {/* Other inputs */}
               <div className="sm:flex gap-6 w-full">
                 <div className="mx-0 my-2.5 flex-1">
                   <label
@@ -134,16 +136,23 @@ const ContactForm = () => {
                 ></textarea>
               </div>
 
+              {/* Hidden inputs for FormSubmit */}
+              <input type="hidden" name="Name" value={formData.firstname} />
+              <input type="hidden" name="LastName" value={formData.lastname} />
+              <input type="hidden" name="Email" value={formData.email} />
+              <input type="hidden" name="PhoneNo" value={formData.phnumber} />
+              <input type="hidden" name="Message" value={formData.Message} />
+
               <div className="mx-0 my-2.5 w-full">
                 <button
                   type="submit"
                   disabled={!isFormValid}
                   className={`border leading-none px-6 text-lg font-medium py-4 rounded-full 
-                    ${
-                      !isFormValid
-                        ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                        : "bg-primary border-primary text-white hover:bg-transparent hover:text-primary cursor-pointer"
-                    }`}
+        ${
+          !isFormValid
+            ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+            : "bg-primary border-primary text-white hover:bg-transparent hover:text-primary cursor-pointer"
+        }`}
                 >
                   Submit
                 </button>
