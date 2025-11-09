@@ -33,7 +33,7 @@ const Banner = () => {
                 </p>
                 <div className="flex align-middle justify-center lg:justify-start">
                   <button className="text-xl font-semibold text-white py-4 px-6 lg:px-12 bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary rounded-xl mr-6 cursor-pointer">
-                    Learn More
+                    Take look to lam's 👉🏻 
                   </button>
                   <button
                     onClick={openModal}
