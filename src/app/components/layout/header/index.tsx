@@ -79,8 +79,8 @@ const Header: React.FC = () => {
               <HeaderLink key={index} item={item} />
             ))}
           </nav>
-          {/* <div className="flex items-center gap-4">
-            <Link
+          <div className="flex items-center gap-4">
+            {/* <Link
               href="#"
               className="hidden lg:block bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white duration-300 px-6 py-3 rounded-lg"
               onClick={() => {
@@ -88,7 +88,7 @@ const Header: React.FC = () => {
               }}
             >
               Sign In
-            </Link>
+            </Link> */}
             {isSignInOpen && (
               <div className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50">
                 <div
@@ -109,7 +109,7 @@ const Header: React.FC = () => {
                 </div>
               </div>
             )}
-            <Link
+            {/* <Link
               href="#"
               className="hidden lg:block text-white bg-linear-to-r from-secondary to-primary hover:from-primary hover:to-secondary duration-300 px-6 py-3 rounded-lg"
               onClick={() => {
@@ -117,7 +117,7 @@ const Header: React.FC = () => {
               }}
             >
               Sign Up
-            </Link>
+            </Link> */}
             {isSignUpOpen && (
               <div className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50">
                 <div
@@ -147,7 +147,7 @@ const Header: React.FC = () => {
               <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
               <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
             </button>
-          </div> */}
+          </div>
         </div>
         {navbarOpen && (
           <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-40" />
