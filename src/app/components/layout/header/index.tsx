@@ -80,64 +80,67 @@ const Header: React.FC = () => {
             ))}
           </nav>
           <div className="flex items-center gap-4">
-            {/* <Link
-              href="#"
-              className="hidden lg:block bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white duration-300 px-6 py-3 rounded-lg"
-              onClick={() => {
-                setIsSignInOpen(true);
-              }}
-            >
-              Sign In
-            </Link> */}
-            {isSignInOpen && (
-              <div className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50">
-                <div
-                  ref={signInRef}
-                  className="relative mx-auto w-full max-w-md bg-purple-950/80  overflow-hidden rounded-lg px-8 pt-14 pb-8 text-center bg-simple-bg backdrop-blur-md"
-                >
-                  <button
-                    onClick={() => setIsSignInOpen(false)}
-                    className="absolute top-0 right-0 mr-8 mt-8 cursor-pointer"
-                    aria-label="Close Sign In Modal"
-                  >
-                    <Icon
-                      icon="tabler:currency-xrp"
-                      className="text-white hover:text-primary text-24 inline-block me-2"
-                    />
-                  </button>
-                  <Signin />
-                </div>
-              </div>
-            )}
-            {/* <Link
-              href="#"
-              className="hidden lg:block text-white bg-linear-to-r from-secondary to-primary hover:from-primary hover:to-secondary duration-300 px-6 py-3 rounded-lg"
-              onClick={() => {
-                setIsSignUpOpen(true);
-              }}
-            >
-              Sign Up
-            </Link> */}
-            {isSignUpOpen && (
-              <div className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50">
-                <div
-                  ref={signUpRef}
-                  className="relative mx-auto w-full max-w-md bg-purple-950/80 overflow-hidden rounded-lg bg-simple-bg backdrop-blur-md px-8 pt-14 pb-8 text-center"
-                >
-                  <button
-                    onClick={() => setIsSignUpOpen(false)}
-                    className="absolute top-0 right-0 mr-8 mt-8 cursor-pointer"
-                    aria-label="Close Sign Up Modal"
-                  >
-                    <Icon
-                      icon="tabler:currency-xrp"
-                      className="text-white hover:text-primary text-24 inline-block me-2"
-                    />
-                  </button>
-                  <SignUp />
-                </div>
-              </div>
-            )}
+            {/*
+  <Link
+    href="#"
+    className="hidden lg:block bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white duration-300 px-6 py-3 rounded-lg"
+    onClick={() => {
+      setIsSignInOpen(true);
+    }}
+  >
+    Sign In
+  </Link>
+  {isSignInOpen && (
+    <div className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50">
+      <div
+        ref={signInRef}
+        className="relative mx-auto w-full max-w-md bg-purple-950/80  overflow-hidden rounded-lg px-8 pt-14 pb-8 text-center bg-simple-bg backdrop-blur-md"
+      >
+        <button
+          onClick={() => setIsSignInOpen(false)}
+          className="absolute top-0 right-0 mr-8 mt-8 cursor-pointer"
+          aria-label="Close Sign In Modal"
+        >
+          <Icon
+            icon="tabler:currency-xrp"
+            className="text-white hover:text-primary text-24 inline-block me-2"
+          />
+        </button>
+        <Signin />
+      </div>
+    </div>
+  )}
+
+  <Link
+    href="#"
+    className="hidden lg:block text-white bg-linear-to-r from-secondary to-primary hover:from-primary hover:to-secondary duration-300 px-6 py-3 rounded-lg"
+    onClick={() => {
+      setIsSignUpOpen(true);
+    }}
+  >
+    Sign Up
+  </Link>
+  {isSignUpOpen && (
+    <div className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50">
+      <div
+        ref={signUpRef}
+        className="relative mx-auto w-full max-w-md bg-purple-950/80 overflow-hidden rounded-lg bg-simple-bg backdrop-blur-md px-8 pt-14 pb-8 text-center"
+      >
+        <button
+          onClick={() => setIsSignUpOpen(false)}
+          className="absolute top-0 right-0 mr-8 mt-8 cursor-pointer"
+          aria-label="Close Sign Up Modal"
+        >
+          <Icon
+            icon="tabler:currency-xrp"
+            className="text-white hover:text-primary text-24 inline-block me-2"
+          />
+        </button>
+        <SignUp />
+      </div>
+    </div>
+  )}
+  */}
             <button
               onClick={() => setNavbarOpen(!navbarOpen)}
               className="block lg:hidden p-2 rounded-lg"
